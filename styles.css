@@ -1,0 +1,291 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+  color: #C0C0C0;
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./images/Japanese_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3
+{
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p
+{
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+
+.card-img-top
+{
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+.item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+.about-wrapper{
+  height: 100vh;
+}
+.about-upper{
+  background-image: url("./images/Japanese_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.about-upper-content > div{
+  background: #0C134F;
+  padding: 4rem 4rem 2.5rem 5rem;
+  text-align: center;
+
+  border-radius: 12px 12px 0 0;
+}
+.about-upper-content{
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  border-radius: 12px;
+  width:80%;
+}
+.about-img img{
+  display: block;
+  width: 200px;
+}
+.about-img{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.shadow{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.about-upper-content h2{
+  font-size: 2rem;
+  margin: 2.2rem 0 0.6rem 0;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #357C3C;
+}
+.about-upper-content h3{
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-top: 1.2rem;
+}
+
+.about-lower{
+  background: #0C134F;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  text-align: center;
+}
+.about-lower h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.about-lower h1 span{
+  color: #357C3C;
+}
+.about-lower h2{
+  font-weight: 600;
+}
+
+.about-para p{
+  font-weight: 300;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+.portfolio-wrapper{
+  height: 100vh;
+}
+.portfolio{
+  background-image: url("./images/Japanese_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.portfolio-content > div{
+  background: #0C134F;
+  padding: 4rem 4rem 2.5rem 5rem;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+}
+.portfolio-content{
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  border-radius: 12px;
+  width: 50%;
+}
+.portfolio-img{
+  height: 100%;
+  display: block;
+}
+
+.portfolio-shadow{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+.portfolio-content h2{
+  font-size: 2rem;
+  margin: 2.2rem 0 0.6rem 0;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #357C3C;
+}
+
+.text-bg-dark {
+  background-color: #0C134F!important;
+  border-color: #357C3C!important;
+}
+
+
+.languages-wrapper{
+  height: 100vh;
+}
+.languages{
+  background-image: url("./images/Japanese_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.languages-content > div{
+  background: #0C134F;
+  padding: 4rem 4rem 2.5rem 5rem;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+}
+.languages-content{
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  border-radius: 12px;
+  width: 60%;
+}
+.portfolio-shadow{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 450px;
+}
